@@ -1,0 +1,9 @@
+[package]
+org = "SumayyaTestOrg"
+name = "Foo_Comp"
+version = "1.0.0"
+export = ["Foo_Comp"]
+distribution = "2201.3.1"
+
+[build-options]
+observabilityIncluded = true
