@@ -1,8 +1,8 @@
 [package]
 org = "SumayyaTestOrg"
-name = "Sample_CREST21"
+name = "SampleGQL2"
 version = "1.0.0"
-export = ["Sample_CREST21"]
+export = ["SampleGQL2"]
 distribution = "2201.3.1"
 
 [build-options]
