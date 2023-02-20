@@ -1,8 +1,8 @@
 [package]
 org = "SumayyaTestOrg"
-name = "Hello_World"
+name = "HelloTemplate"
 version = "1.0.0"
-export = ["Hello_World"]
+export = ["HelloTemplate"]
 distribution = "2201.3.1"
 
 [build-options]
