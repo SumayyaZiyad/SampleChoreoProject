@@ -1,8 +1,8 @@
 [package]
 org = "SumayyaTestOrg"
-name = "Foo_Comp"
+name = "Sample_CREST21"
 version = "1.0.0"
-export = ["Foo_Comp"]
+export = ["Sample_CREST21"]
 distribution = "2201.3.1"
 
 [build-options]
