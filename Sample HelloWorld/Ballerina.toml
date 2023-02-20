@@ -1,0 +1,9 @@
+[package]
+org = "SumayyaTestOrg"
+name = "Sample_HelloWorld"
+version = "1.0.0"
+export = ["Sample_HelloWorld"]
+distribution = "2201.3.1"
+
+[build-options]
+observabilityIncluded = true
