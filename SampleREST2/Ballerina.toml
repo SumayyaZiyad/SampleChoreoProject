@@ -1,0 +1,9 @@
+[package]
+org = "SumayyaTestOrg"
+name = "SampleREST2"
+version = "1.0.0"
+export = ["SampleREST2"]
+distribution = "2201.3.1"
+
+[build-options]
+observabilityIncluded = true
