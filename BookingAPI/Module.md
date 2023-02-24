@@ -1,4 +1,4 @@
-A simple GraphQL Service implementation.
+A simple HTTP Service implementation.
 [//]: # (above is the module summary)
 
 # Module Overview
