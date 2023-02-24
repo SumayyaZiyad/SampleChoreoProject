@@ -1,5 +1,4 @@
 import ballerinax/twitter;
-import ballerinax/twilio;
 import SumayyaTestOrg/BookingAPI as booking_api;
 import SumayyaTestOrg/InventoryAPI as inventory_api;
 import ballerina/log;
@@ -49,14 +48,14 @@ service /flights on new http:Listener(6060) {
         bookingRequest.setPayload({flightNumber: reservation.flightNumber, origin: reservation.origin, destination: reservation.destination, flightDate: reservation.flightDate, seats: reservation.seats});
         booking_api:BookingRecord bookingResponse = check bookings_apiEndpoint->/booking.post(bookingRequest);
         log:printInfo("Saved Booking : " + bookingResponse.toBalString());
-        twilio:ConnectionConfig config = {
-            twilioAuth: {
+        // twilio:ConnectionConfig config = {
+        //     twilioAuth: {
 
-            }
-        };
-        twilio:Client twilioEndpoint = check new (config);
-        twilio:SmsResponse smsResponse = check twilioEndpoint->sendSms("+18312449432", reservation.contactNo, "Booking confirmed for flight " + reservation.flightNumber);
-        log:printInfo("SMS Sent " + smsResponse.toBalString());
+        //     }
+        // };
+        // twilio:Client twilioEndpoint = check new (config);
+        // twilio:SmsResponse smsResponse = check twilioEndpoint->sendSms("+18312449432", reservation.contactNo, "Booking confirmed for flight " + reservation.flightNumber);
+        // log:printInfo("SMS Sent " + smsResponse.toBalString());
         return reservation;
     }
 }
