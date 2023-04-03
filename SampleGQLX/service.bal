@@ -1,15 +1,8 @@
 import ballerina/graphql;
 
-type PaymentEntry record{|
-    string id;
-    decimal amount;
-    string owner;
-    string currency;
-|};
-
 @display {
-	label: "PaymentService",
-	id: "PaymentService-a6bf7559-a755-4b66-8508-27ca13ebcefc"
+	label: "SampleGQLX",
+	id: "SampleGQLX-485219a1-d702-42f8-bf73-e3ae7944223b"
 }
 service / on new graphql:Listener(9090) {
 
