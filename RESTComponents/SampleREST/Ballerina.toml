@@ -1,8 +1,0 @@
-[package]
-org = "SumayyaTestOrg"
-name = "SampleREST"
-version = "1.0.0"
-distribution = "2201.4.1"
-
-[build-options]
-observabilityIncluded = true
